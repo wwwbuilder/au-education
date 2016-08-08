@@ -1,0 +1,49 @@
+<div class="sidebar-content">
+
+	<!-- Main navigation -->
+	<div class="sidebar-category sidebar-category-visible">
+		<div class="category-title h6 bg-cyan-a100">
+			<span>Communications</span> 
+			
+			<ul class="icons-list">
+				<li>
+					<a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="category-content no-padding">
+			<ul class="navigation navigation-main navigation-accordion">
+
+				<!-- Main -->
+				<li>
+					<a href="#"><i class="icon-stack"></i> <span>Compose</span></a>
+					<ul>
+						<li><a [routerLink]="['/admin/main/communications/compose/email']">E-mail</a></li>
+						<li><a [routerLink]="['/admin/main/communications/compose/sms']">SMS</a></li>
+						<li><a [routerLink]="['/admin/main/communications/compose/letter']">Letter</a></li>
+						<li><a [routerLink]="['/admin/main/communications/compose/label']">Label</a></li>										
+					</ul>
+				</li>
+				<li><a [routerLink]="['/admin/main/communications/items']"><i class="icon-list-unordered"></i> <span>Existing Items</span></a></li>
+				<li class="navigation-divider"></li>
+				
+				<li>
+					<a href="#"><i class="icon-gear"></i> <span>Setup</span></a>
+					<ul>
+						<li><a [routerLink]="['/admin/main/communications/setup/communication-cc']">Communication CC</a></li>
+						<li><a [routerLink]="['/admin/main/communications/setup/template']">E-mail Templates</a></li>
+						<li><a [routerLink]="['/admin/main/communications/setup/labels']">Labels</a></li>
+						<li><a [routerLink]="['/admin/main/communications/setup/configuration']">Configuration</a></li>										
+					</ul>
+				</li>
+
+				
+				<!-- /main -->
+
+			</ul>
+		</div>
+	</div>
+	<!-- /main navigation -->
+
+</div>

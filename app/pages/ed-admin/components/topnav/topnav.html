@@ -1,0 +1,216 @@
+<div class="page-header page-header-inverse bg-indigo">
+  <!-- Main navbar -->
+  <div class="navbar navbar-inverse navbar-transparent">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="../../assets/images/logo_light.png" alt=""></a>
+    </div>
+
+    <div class="navbar-collapse" id="navbar-mobile">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle legitRipple" href="#">
+              <i class="icon-bell2"></i>
+              <span class="visible-xs-inline-block position-right">Activity</span>
+              <span class="status-mark border-pink-300"></span>
+            </a>
+
+            <div class="dropdown-menu dropdown-content">
+              <div class="dropdown-content-heading">
+                Activity
+                <ul class="icons-list">
+                  <li><a href="#"><i class="icon-menu7"></i></a></li>
+                </ul>
+              </div>
+
+              <ul class="media-list dropdown-content-body width-350">
+                <li class="media">
+                  <div class="media-left">
+                    <a class="btn bg-success-400 btn-rounded btn-icon btn-xs legitRipple" href="#"><i class="icon-mention"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    <a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and tricks"
+                    <div class="media-annotation">4 minutes ago</div>
+                  </div>
+                </li>
+
+                <li class="media">
+                  <div class="media-left">
+                    <a class="btn bg-pink-400 btn-rounded btn-icon btn-xs legitRipple" href="#"><i class="icon-paperplane"></i></a>
+                  </div>
+
+                  <div class="media-body">
+                    Special offers have been sent to subscribed users by <a href="#">Donna Gordon</a>
+                    <div class="media-annotation">36 minutes ago</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle legitRipple" href="#">
+              <i class="icon-bubble8"></i>
+              <span class="visible-xs-inline-block position-right">Messages</span>
+            </a>
+
+            <div class="dropdown-menu dropdown-content width-350">
+              <div class="dropdown-content-heading">
+                Messages
+                <ul class="icons-list">
+                  <li><a href="#"><i class="icon-menu7"></i></a></li>
+                </ul>
+              </div>
+
+              <ul class="media-list dropdown-content-body">
+                <li class="media">
+                  <div class="media-left">
+                    <img alt="" class="img-circle img-sm" src="../../assets/images/sponsor2.jpg">
+                    <span class="badge bg-danger-400 media-badge">5</span>
+                  </div>
+
+                  <div class="media-body">
+                    <a class="media-heading" href="#">
+                      <span class="text-semibold">Dwain Smith</span>
+                      <span class="media-annotation pull-right">04:58</span>
+                    </a>
+
+                    <span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+                  </div>
+                </li>
+
+                <li class="media">
+                  <div class="media-left">
+                    <img alt="" class="img-circle img-sm" src="../../assets/images/sponsor1.jpg">
+                    <span class="badge bg-danger-400 media-badge">4</span>
+                  </div>
+
+                  <div class="media-body">
+                    <a class="media-heading" href="#">
+                      <span class="text-semibold">Claudette Smith</span>
+                      <span class="media-annotation pull-right">12:16</span>
+                    </a>
+                    <span class="text-muted">That was something he was unable to do because...</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown dropdown-user" dropdown>
+            <a class="dropdown-toggle legitRipple" dropdownToggle>
+              <img alt="" src="../../assets/images/image.png">
+              <span>Victoria</span>
+              <i class="caret"></i>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#">My Profile</a></li>
+              <li><a href="#">Account Settings</a></li>
+              <li><a [routerLink]="['/admin/login']">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /main navbar -->
+
+
+
+
+  <!-- Second navbar -->
+  <div class="navbar navbar-inverse navbar-transparent" id="navbar-second">
+    <ul class="nav navbar-nav no-border visible-xs-block">
+      <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+    </ul>
+
+    <div class="navbar-collapse collapse" id="navbar-second-toggle">
+      <ul class="nav navbar-nav navbar-nav-material" (click)="$event.preventDefault()">
+        <li >
+          <a [routerLink]="['/admin/main/dashboard']">Dashboard</a>
+        </li>
+        <li class="dropdown" dropdown routerLinkActive="active">
+          <a class="dropdown-toggle" dropdownToggle>Admin and Communications<span class="caret"></span></a>
+          <ul class="dropdown-menu width-200">
+            <li><a href="#"><i class="icon-bubbles6"></i> Enquiry</a></li>
+            <li><a href="#"><i class="icon-folder-open3"></i> Admissions</a></li>
+            <li><a href="#"><i class="icon-users4"></i> Student Records</a></li>
+            <li><a href="#"><i class="icon-people"></i> Sponsor Records</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Business Intelligence</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/admin/main/communications/index']"><i class="icon-mail5"></i> Communications</a></li>
+            <li><a href="#"><i class="icon-graduation2"></i> Alumni and Donor Management</a></li>
+            <li><a href="#"><i class="icon-calendar52"></i> Calendar and Events</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" dropdown>
+          <a class="dropdown-toggle" dropdownToggle>Human Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu width-300" dropdownToggle>
+            <li><a href="#"><i class="icon-database-arrow"></i> Human Resources Management</a></li>
+            <li><a href="#"><i class="icon-alarm-check"></i> Staff Attendance</a></li>
+            <li><a href="#"><i class="icon-stack-cancel"></i> Staff Leave Management</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" dropdown>
+          <a class="dropdown-toggle" dropdownToggle>Financial<span class="caret"></span></a>
+          <ul class="dropdown-menu width-300">
+            <li><a href="#"><i class="icon-address-book2"></i> Contacts Premium</a></li>
+            <li><a href="../fee-administration/index.html"><i class="icon-grid"></i> Fee Administration</a></li>
+            <li><a href="#"><i class="icon-grid"></i> General Ledger and Banking</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Budgeting</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Inventory</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Bills Payable</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Requisitions and Purchasing</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Supplier Payments</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Customer Transactions</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Customer Payments</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" dropdown>
+          <a class="dropdown-toggle" dropdownToggle>Student Learning and Activities <span class="caret"></span></a>
+          <ul class="dropdown-menu width-400">
+            <li><a href="#"><i class="icon-grid"></i> Academic Management</a></li>
+            <li><a href="#"><i class="icon-calendar2"></i> Timetable</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Assessment Premium</a></li>
+            <li><a href="#"><i class="icon-checkbox-checked"></i> Attendance</a></li>
+            <li><a href="#"><i class="icon-checkbox-checked"></i> Attendance by House</a></li>
+            <li><a href="#"><i class="icon-office"></i> Houses and Teams</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Activity Management</a></li>
+            <li><a href="#"><i class="icon-grid"></i> SPE Programme</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Learning and Behaviour Management</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Curriculum Library</a></li>
+            <li><a href="#"><i class="icon-grid"></i> CAS</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Learning Support</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" dropdown>
+          <a class="dropdown-toggle" dropdownToggle>Facilities and Infrastructure <span class="caret"></span></a>
+          <ul class="dropdown-menu width-200">
+            <li><a href="#"><i class="icon-grid"></i> Boarding</a></li>
+            <li><a href="#"><i class="icon-add-to-list"></i> Helpdesk and Asset Register</a></li>
+            <li><a href="#"><i class="icon-bus"></i> Transport</a></li>
+            <li><a href="#"><i class="icon-library2"></i> Library Management</a></li>
+            <li><a href="#"><i class="icon-folder-search"></i> Library Search</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" dropdown>
+          <a class="dropdown-toggle" dropdownToggle>Portals <span class="caret"></span></a>
+          <ul class="dropdown-menu width-300">
+            <li><a href="#"><i class="icon-grid"></i> Sponsor Portal</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Student Portal</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Alumni Portal</a></li>
+            <li><a href="#"><i class="icon-grid"></i> Online Application</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-nav-material navbar-right">
+        <li><a href="#"><i class="icon-cloud2"></i></a></li>
+        <li><a href="#"><i class="icon-cog3"></i></a></li>
+      </ul>
+
+
+    </div>
+  </div>
+</div>
